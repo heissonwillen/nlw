@@ -29,6 +29,7 @@ const CreatePoint = () => {
     const [ufs, setUfs] = useState<string[]>([]);
     const [cities, setCities] = useState<string[]>([]);
 
+<<<<<<< HEAD
     const [initialPosition, setInitialPosition] = useState({
         name: '',
         email: '',
@@ -48,10 +49,15 @@ const CreatePoint = () => {
             setInitialPosition([latitude, longitude]);
         })
     }, []);
+=======
+    const [selectedUf, setSelectedUf] = useState('0');
+    const [selectedCity, setSelectedCity] = useState('0');
+>>>>>>> e97cfc3a5014284830d256c9eedf4633a5b2b69c
 
     useEffect(() => {
         api.get('items').then(response => {
             setItems(response.data);
+<<<<<<< HEAD
         });
     }, []);
 
@@ -60,10 +66,23 @@ const CreatePoint = () => {
             const ufInitials = response.data.map(uf => uf.sigla);
 
             setUfs(ufInitials)
+=======
+>>>>>>> e97cfc3a5014284830d256c9eedf4633a5b2b69c
         });
     }, []);
 
     useEffect(() => {
+<<<<<<< HEAD
+=======
+        axios.get<IBGEUFResponse[]>('https://servicodados.ibge.gov.br/api/v1/localidades/estados').then(response => {
+            const ufInitials = response.data.map(uf => uf.sigla);
+
+            setUfs(ufInitials)
+        });
+    }, []);
+
+    useEffect(() => {
+>>>>>>> e97cfc3a5014284830d256c9eedf4633a5b2b69c
         if (selectedUf === '0'){
             return;
         }
@@ -86,6 +105,7 @@ const CreatePoint = () => {
         const city = event.target.value;
         setSelectedCity(city);
     }
+<<<<<<< HEAD
 
     function handleMapClick(event: LeafletMouseEvent) {
         setSelectedPosition([
@@ -99,6 +119,8 @@ const CreatePoint = () => {
 
         SetFormData({ ...formData, [name]: value });
     }
+=======
+>>>>>>> e97cfc3a5014284830d256c9eedf4633a5b2b69c
 
     return (
         <div id="page-create-point">
