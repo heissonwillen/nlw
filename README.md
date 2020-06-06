@@ -12,6 +12,8 @@ This is a both phone and web app that helps people to find garbage collection ar
 
 ## Screenshots
 
+<img src="https://github.com/Heisson/nlw/blob/master/img/android0.jpg" alt="android0" width="200"/>
+
 ![web0](https://github.com/Heisson/nlw/blob/master/img/android0.jpg =250x)
 ![web0](https://github.com/Heisson/nlw/blob/master/img/android1.jpg =250x)
 ![web0](https://github.com/Heisson/nlw/blob/master/img/web0.jpg =250x)
