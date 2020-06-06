@@ -1,0 +1,14 @@
+{
+	"name": "Cafeteria café",
+	"email": "contato@denovo.com",
+	"whatsapp": "999999999",
+	"latitude": -4,
+	"longitude": -30,
+	"city": "Caxias",
+	"uf": "MA",
+	"items": [
+		1,
+		2,
+		6
+	]
+}
